@@ -35,6 +35,11 @@
       "example": "Database Connection Name",
       "required": true
     },
+    "REDIRECT_URL_AFTERSIGNUP": {
+      "description": "Return Url after signup",
+      "example": "https://example.com",
+      "required": true
+    },
     "CUSTOM_CSS": {
       "description": "A CSS file containing custom styles for the extension",
       "example": "https://cdn.fabrikam.com/static/extensions/theme/fabrikam.css",
