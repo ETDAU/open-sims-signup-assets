@@ -30,6 +30,11 @@
       "example": "Open SIMS User Manager",
       "required": true
     },
+    "CONNECTION": {
+      "description": "Signup database name",
+      "example": "",
+      "required": true
+    },
     "CUSTOM_CSS": {
       "description": "A CSS file containing custom styles for the extension",
       "example": "https://cdn.fabrikam.com/static/extensions/theme/fabrikam.css",
