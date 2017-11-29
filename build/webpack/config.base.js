@@ -29,7 +29,9 @@ module.exports = {
       'redux-thunk',
       'redux-logger',
       'redux-promise-middleware',
-      'redux-simple-router'
+      'redux-simple-router',
+      'react-async-script',
+      'react-google-recaptcha'
     ]
   },
 

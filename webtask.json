@@ -16,9 +16,8 @@
     "extension"
   ],
   "auth0": {
-    "createClient": true,
-    "onUninstallPath": "/.extensions/on-uninstall",
-    "scopes": "read:clients delete:clients read:connections read:users update:users delete:users create:users read:logs read:device_credentials update:device_credentials delete:device_credentials"
+    "createClient": false,
+    "onUninstallPath": "/.extensions/on-uninstall"
   },
   "secrets": {
     "EXTENSION_CLIENT_ID": {
@@ -40,25 +39,25 @@
       "example": "https://example.com",
       "required": true
     },
+    "RECAPTCHA_SITE_KEY": {
+      "description": "Site key for Google reCAPTCHA",
+      "example": "656Skljadsfhakjsdfhajklsdfdhasjklf",
+      "required": true
+    },
+    "RECAPTCHA_SITE_SECRET": {
+      "description": "Site secret for Google reCAPTCHA",
+      "example": "6afakljsdhkfjhas87fjksagfasjkf",
+      "required": true
+    },
+    "RECAPTCHA_VERIFY_URL": {
+      "description": "URL to post for reCAPTCHA verification",
+      "example": "https://www.google.com/recaptcha/api/siteverify",
+      "required": true
+    },
     "CUSTOM_CSS": {
       "description": "A CSS file containing custom styles for the extension",
       "example": "https://cdn.fabrikam.com/static/extensions/theme/fabrikam.css",
       "required": false
-    },
-		"FEDERATED_LOGOUT": {
-      "description": "Also sign out from the IDP when users logout?",
-      "type": "select",
-      "allowMultiple": false,
-      "options": [
-        {
-          "value": "false",
-          "text": "No"
-        },
-        {
-          "value": "true",
-          "text": "Yes"
-        }
-      ]
     }
   }
 }
