@@ -16,7 +16,7 @@
     "extension"
   ],
   "auth0": {
-    "createClient": true,
+    "createClient": false,
     "onUninstallPath": "/.extensions/on-uninstall"
   },
   "secrets": {
